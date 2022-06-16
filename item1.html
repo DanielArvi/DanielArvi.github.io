@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniel Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="mystyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|
+        Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/710f6101fe.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <button class="nav-back">
+                <a href="index.html"><i class="fa-solid fa-arrow-left-long"></i></a>
+            </button>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Hem</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Vad jag gör</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">Om mig</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projekt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+               <!-- intro -->
+               <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    <strong>DM-systems</strong>
+                    <br>
+                    Avgränsat ERP-system
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Med fokus på ärendehantering & tidsplanering</p>
+                <img src="img/project.jpg" alt="" class="intro__img">
+            </section>
+
+            
+            <div class="portfolio-item-individual">
+                <p>
+                    Detta är ett ERP-system som utvecklades under examensarbetet, där poängen var att utveckla och 
+                    anpassa en avgränsad del av ett ERP-system för ett mindre företag som behövde förbättrad 
+                    ärendehantering och tidsplanering.
+                </p>
+                <p class="portfolio__header"><br>Översiktsvy / Dashboard</p>
+                <img src="img/project.jpg" alt="" class="project__img">
+                <p>Detta är översiktsvyn, även kallad dashboard, som samlar all relevant information på ett ställe. 
+                    Det är här som anställda exempelvis kollar i början av arbetsdagen för att snabbt se vad de ska lägga fokus på.</p>
+                <p>Ärenden kategoriseras i fyra olika rutor beroende på deras planeringsstatus. 
+                    Det finns också statistik till vänster om ärenden, samt en lista över klienter med mest aktiva ärenden</p>
+            </div>
+            
+            <div class="portfolio-item-individual">
+                <p class="portfolio__header">Ärendevy</p>
+                <img src="img/projectworks.jpg" alt="" class="project__img">
+                <p>Här visas samtliga ärenden som ej är avslutade. De kan filtreras på olika sätt genom att exempelvis trycka på
+                    pilar vid rubriker (fallande & stigande ordning), söka med ord och prioriteras med olika filter. Dessa ärenden 
+                    har tre knappar, där en tar användaren till en detaljvy, en annan till en redigeringsvy och den sista raderar ärendet.
+                    Det finns liknande vyer för anställda och klienter med samma funktionalitet för att hantera dem.
+                </p>
+                <p>I ärendevyn kan användaren registrera nya ärenden genom att trycka på motsvarig knapp, vilket tar den till en
+                    sida där den fyller i samtlig information. Det går också att navigera till avslutade ärenden för att 
+                    se historik över avslutade ärenden. 
+                    Ifall de anses vara irrelevanta kan de raderas från databasen genom att trycka på radera knappen. </p>
+            </div>
+
+            <div class="portfolio-item-individual">
+                <p class="portfolio__header">Kalender</p>
+                <img src="img/projectcalendar.jpg" alt="" class="project__img">
+                <p>Kalendern visar alla icke-avslutade ärenden som är registrerade i systemet. Ifall ett nytt ärende registreras förs det 
+                    autmatiskt in här. Detta underlättar tidsplanering eftersom användaren kan få en snabb överblick över hur 
+                    arbetsbelastningen ser ut. 
+                </p>
+                <p>Det går att trycka på samtliga ärenden vilket tar användaren till motsvarande ärendets detaljvy. 
+                    Det går att skifta från månadsvy, veckovy och dagsvy för att ge olika nivåer av översikt. </p>
+            </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:danielarvidsson@hotmail.se" class="footer__link">danielarvidsson@hotmail.se</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/DanielArvi"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.youtube.com/user/dannearv"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
